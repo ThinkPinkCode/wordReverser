@@ -38,7 +38,8 @@ public class main {
 
 	public static void separateSentence(String sentence) throws IOException{
 		String[] splitSentence = sentence.split(" ");
-		printArrayBackwards(splitSentence, createOutputFile());
+		PrintWriter outputPrinter = createOutputFile();
+		printArrayBackwards(splitSentence, outputPrinter);
 	}
 
 
@@ -55,7 +56,10 @@ public class main {
 		for (int i= (myArray.length-1); i > -1; i-- ) {
 			System.out.print(myArray[i] + " ");
 			outputWriter.print(myArray[i] + " ");
+			}
+		System.out.println();
+		outputWriter.println();
 		}
-	}
+	
 
 }
