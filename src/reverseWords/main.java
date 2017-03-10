@@ -50,13 +50,6 @@ public class main {
 	}
 
 
-	public static void printArray(String[] myArray){
-		for (int i=0; i < myArray.length; i++ ) {
-			System.out.println(myArray[i]);
-		}
-	}
-
-
 
 	public static void printArrayBackwards(String[] myArray, PrintWriter outputWriter){
 		for (int i= (myArray.length-1); i > -1; i-- ) {
